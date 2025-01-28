@@ -1,0 +1,122 @@
+.faqItem {
+  margin-bottom: 1rem;
+  border: 1px solid #F0E6DD; /* גבול עדין יותר */
+  border-radius: 8px;
+  overflow: hidden;
+  width: 500px;
+  margin: 15px auto;
+  direction: rtl;
+  box-shadow: 0 3px 10px rgba(244, 238, 232, 0.4); /* צל רך ונוצץ */
+  text-decoration: none;
+  backdrop-filter: blur(5px);
+}
+
+.questionButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  background-color: #FDFAF7; /* לבן פנינה */
+  border: none;
+  text-decoration: none;
+  color: #8A7B70; /* בז' מעודן */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.questionButton:hover {
+  background-color: #FCF7F2; /* גוון פנינה בהיר */
+  box-shadow: inset 0 0 15px rgba(255, 253, 250, 0.5); /* הילה פנימית עדינה */
+}
+
+.questionText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #8A7B70; /* בז' מעודן */
+  direction: rtl;
+  flex-grow: 1;
+}
+
+.iconWrapper {
+  width: 24px;
+  flex-shrink: 0;
+  color: #D4C3B5; /* בז' פנינה */
+  text-decoration: none;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.answerContainer {
+  overflow: hidden;
+  transition: height 0.3s ease;
+  background-color: #FFFEFB; /* לבן שמנת עדין */
+  margin: auto;
+  direction: rtl;
+}
+
+.answerText {
+  font-family: 'AssistantR', sans-serif;
+  font-size: 1.05rem;
+  padding: 1rem;
+  color: #9C8E83; /* בז' אפרפר עדין */
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* קישורים והדגשות */
+.answerText a, .answerText strong {
+  color: #CAB3A2; /* בז' פנינה מוזהב */
+  text-shadow: 0 0 1px rgba(202, 179, 162, 0.1); /* הילה עדינה */
+}
+
+/* תוספת אפקטים נוצצים */
+.faqItem:hover {
+  box-shadow: 0 5px 15px rgba(244, 238, 232, 0.6);
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 350px) {
+  .faqItem {
+    width: 280px;
+  }
+  .questionText {
+    font-size: 1rem;
+  }
+  .answerText {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (min-width: 350px) and (max-width: 450px) {
+  .faqItem {
+    width: 320px;
+  }
+  .questionText {
+    font-size: 1.05rem;
+  }
+  .answerText {
+    font-size: 0.95rem; 
+  }
+}
+
+@media (min-width: 450px) and (max-width: 550px) {
+  .faqItem {
+    width: 400px;
+  }
+  .questionText {
+    font-size: 1.1rem;
+  }
+  .answerText {
+    font-size: 1rem; 
+  }
+}
