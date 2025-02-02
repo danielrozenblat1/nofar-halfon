@@ -5,6 +5,8 @@ import styles from "./ForthScreen.module.css"
 import makeup from "../Icons/wired-outline-1599-powder-makeup-face-hover-pinch (6).json"
 import lipstick from "../Icons/wired-outline-1559-lipstick-hover-pinch.json"
 import female from "../Icons/wired-outline-633-female-standing-hover-success (3).json"
+import Timeline from "../components/Nightss/Steps"
+
 const ForthScreen = () => {
 
 
@@ -17,6 +19,9 @@ const ForthScreen = () => {
 <IconTextComponent text="להרגיש שאת נראת בגרסה הכי טובה של עצמך" icon={female}/>
       </div>
       <Brides/>
+      <div className={styles.title}>וזה עובד בדיוק ככה</div>
+      <div className={styles.description}>  התהליך איתי קורה ב-4 שלבים סופר פשוטים עד שאת יוצאת ממני לאירוע שלך הכי מושלמת שיש</div>
+      <Timeline/>
 </>
 }
 
