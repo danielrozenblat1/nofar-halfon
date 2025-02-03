@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Me.module.css';
-import nofar from "../../images/נופר חלפון איפור 1.png"
+import nofar from "../../images/נופר חלפון תדמית.png"
 import Button from '../button/Button';
 const AboutMe = () => {
   return (
