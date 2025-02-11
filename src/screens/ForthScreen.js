@@ -6,6 +6,8 @@ import makeup from "../Icons/wired-outline-1599-powder-makeup-face-hover-pinch (
 import lipstick from "../Icons/wired-outline-1559-lipstick-hover-pinch.json"
 import female from "../Icons/wired-outline-633-female-standing-hover-success (3).json"
 import Timeline from "../components/Nightss/Steps"
+import FormScreen from "../components/form/FormScreen"
+import BridesNight from "../components/recommends/Nights"
 
 const ForthScreen = () => {
 
@@ -18,10 +20,12 @@ const ForthScreen = () => {
 <IconTextComponent text="לא לדאוג לתיקוני איפור באמצע הערב" icon={lipstick}/>
 <IconTextComponent text="להרגיש שאת נראת בגרסה הכי טובה של עצמך" icon={female}/>
       </div>
-      <Brides/>
+      <BridesNight/>
       <div className={styles.title}>וזה עובד בדיוק ככה</div>
       <div className={styles.description}>  התהליך איתי קורה ב-4 שלבים סופר פשוטים עד שאת יוצאת ממני לאירוע שלך הכי מושלמת שיש</div>
       <Timeline/>
+      <div className={styles.title}>שנתאם תאריך?</div>
+      <FormScreen/>
 </>
 }
 

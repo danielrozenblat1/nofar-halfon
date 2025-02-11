@@ -20,10 +20,11 @@ import result16 from "../../images/נופר חלפון איפור 16.png"
 import result17 from "../../images/נופר חלפון איפור 17.png";
 import result18 from "../../images/נופר חלפון איפור 18.png"
 import result19 from "../../images/נופר חלפון איפור 19.png"
+import result20 from "../../images/נופר חלפון איפור 20.png"
 const Brides = () => {
   const images = [
     result1, result2, result3, result4,
-    result5, result6, result7, result8,result9,result10,result12,result13,result14,result15,result16,result17,result18,result19
+    result5, result6, result8,result9,result10, result7,result12,result13,result14,result15,result16,result17,result18,result19,result20
   ];
 
   return (
@@ -50,7 +51,7 @@ const Brides = () => {
               <div key={`second-${index}`} className={styles.imageWrapper}>
                 <img
                   src={img}
-                  alt={`שמחה לוי תלמידה ${index + 1}`}
+                  alt={`נופר חלפון תלמידה ${index + 1}`}
                   className={styles.image}
                 />
               </div>
@@ -58,7 +59,7 @@ const Brides = () => {
           </div>
         </div>
       </div>
-      <Button text="נופר, בואי נתאם תאריך!" message="היי נופר, הגעתי מהדף, אשמח לשמוע עוד על.."/>
+ 
     </>
   );
 };

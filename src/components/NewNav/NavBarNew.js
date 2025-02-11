@@ -91,7 +91,7 @@ const NavBarNew = () => {
               </ScrollLink>
             ))}
             <div className={styles.center}>
-              <img className={styles.image} src={logo} alt="מאי שושן לוגו"/>
+              <img className={styles.image} src={logo} alt="נופר חלפון לוגו"/>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@ const NavBarNew = () => {
         </div>
       )}
       <div className={styles.socialIcons}>
-        <a href="https://www.instagram.com/m.s_nails_artist/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+        <a href="https://www.instagram.com/nofarhalfonmakeup/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         <a onClick={handleClick}><FaWhatsapp /></a>
         
       </div>

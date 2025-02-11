@@ -6,6 +6,8 @@ import makeup from "../Icons/wired-lineal-1598-makeup-hover-pinch.json"
 import sun from "../Icons/wired-lineal-803-cloud-sun-hover-pinch.json"
 import MakeupSteps from '../components/steps/Steps';
 import Recommends from '../components/recommends/Recommends';
+import FormScreen from '../components/form/FormScreen';
+
 const SecondScreen = () => {
     return (
         <>
@@ -31,6 +33,8 @@ const SecondScreen = () => {
             <div className={styles.title}>וזה קורה ב-3 שלבים סופר פשוטים ומדוייקים</div>
             <MakeupSteps/>
             <Recommends/>
+            <div className={styles.title}>תשאירי פרטים כאן כדי לשמוע ממני</div>
+            <FormScreen/>
         </>
     );
 };

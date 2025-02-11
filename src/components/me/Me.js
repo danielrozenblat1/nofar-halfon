@@ -21,7 +21,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
-      <Button text="נופר, בואי נתאם תאריך"/>
+      
     </>
   );
 };

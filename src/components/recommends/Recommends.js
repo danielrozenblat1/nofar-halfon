@@ -118,7 +118,7 @@ return <>
         </Slider>
       </div>
 
-<Button text="נופר, אני רוצה לשמוע עוד"/>
+
 </>
 
 
