@@ -75,12 +75,12 @@ const FormScreen = (props) => {
                     placeholder="מייל"
                     ref={emailRef}
                 />
-                <input
-                    type="date"
-                    className={styles.input}
-                    placeholder="תאריך האירוע"
-                    ref={reasonRef}
-                />
+         <input
+    type="text"
+    className={styles.input}
+    placeholder="תאריך האירוע"
+    ref={reasonRef}
+/>
                 <button onClick={submitHandler} className={styles.button}>
                     נופר, בואי נדבר!
                 </button>
