@@ -8,6 +8,7 @@ import female from "../Icons/wired-outline-633-female-standing-hover-success (3)
 import Timeline from "../components/Nightss/Steps"
 import FormScreen from "../components/form/FormScreen"
 import BridesNight from "../components/recommends/Nights"
+import Button from "../components/button/Button"
 
 const ForthScreen = () => {
 
@@ -16,16 +17,16 @@ const ForthScreen = () => {
       <div className={styles.title} id="יש לי אירוע ערב">יש לך אירוע בקרוב?</div>
       <div className={styles.description}>אני מבינה את הצורך</div>
       <div className={styles.row}>
-<IconTextComponent text="להרגיש הכי מיוחדת באירוע" icon={makeup}/>
-<IconTextComponent text="לא לדאוג לתיקוני איפור באמצע הערב" icon={lipstick}/>
-<IconTextComponent text="להרגיש שאת נראת בגרסה הכי טובה של עצמך" icon={female}/>
+<IconTextComponent text="להרגיש מיוחדת ובלתי נשכחת ביום המיוחד שלך." icon={makeup}/>
+<IconTextComponent text="שהאיפור שלך יישאר מושלם לאורך כל הערב, מבלי לדאוג לתיקונים מיותרים." icon={lipstick}/>
+<IconTextComponent text="להרגיש שאת נראת בגרסה הטובה ביותר של עצמך" icon={female}/>
       </div>
       <BridesNight/>
-      <div className={styles.title}>וזה עובד בדיוק ככה</div>
-      <div className={styles.description}>  התהליך איתי קורה ב-4 שלבים סופר פשוטים עד שאת יוצאת ממני לאירוע שלך הכי מושלמת שיש</div>
+      {/* <div className={styles.title}>וזה עובד בדיוק ככה</div> */}
+      <div className={styles.description}>
+      התהליך איתי מתבצע בארבעה שלבים פשוטים, אשר יבטיחו שתצאי מהשירות שלי לאירוע שלך במראה המושלם.</div>
       <Timeline/>
-      <div className={styles.title}>שנתאם תאריך?</div>
-      <FormScreen/>
+<Button text="נופר, בואי נשריין תאריך!"/>
 </>
 }
 

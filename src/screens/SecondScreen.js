@@ -7,12 +7,14 @@ import sun from "../Icons/wired-lineal-803-cloud-sun-hover-pinch.json"
 import MakeupSteps from '../components/steps/Steps';
 import Recommends from '../components/recommends/Recommends';
 import FormScreen from '../components/form/FormScreen';
+import Button from '../components/button/Button';
 
 const SecondScreen = () => {
     return (
         <>
             <div className={styles.title}>עכשיו אפשר לדבר..</div>
-            <div className={styles.description}>חשוב לי שתצאי ממני הגרסה הכי יפה של עצמך ולא תדאגי אפילו לשנייה ביום הגדול שלך! ולכן, אני שמה דגש שכל כלה שעוברת דרכי תקבל</div>
+           
+            <div className={styles.description}>חשוב לי שתצאי ממני הגרסה הכי יפה של עצמך ולא תדאגי אפילו לשנייה ביום הגדול שלך! ולכן, אני שמה דגש שכל כלה שלי מקבלת</div>
             <div className={styles.row}>
                 <NewBox 
                     title="הקשבה מלאה לצרכים שלה" 
@@ -30,11 +32,15 @@ const SecondScreen = () => {
                     icon={makeup}
                 />
             </div>
-            <div className={styles.title}>וזה קורה ב-3 שלבים סופר פשוטים ומדוייקים</div>
+            <div className={styles.description}>ביום המיוחד שלך, כל פרט חשוב. אני יודעת שאת רוצה להיראות במיטבך, להרגיש יפה ובטוחה בעצמך, ולחוות את היום הזה בשמחה ובנעימות. אני כאן כדי להעניק לך את הביטחון שאת זקוקה לו, ולהפוך את חלום האיפור שלך למציאות. </div>
+            <div className={styles.title}>וזה קורה ככה:</div>
             <MakeupSteps/>
+            <Button text="נופר, בואי נדבר!"/>
+            {/* <div className={styles.title}>תשאירי פרטים כאן כדי לשמוע ממני</div>
+            <FormScreen/> */}
             <Recommends/>
-            <div className={styles.title}>תשאירי פרטים כאן כדי לשמוע ממני</div>
-            <FormScreen/>
+          
+          
         </>
     );
 };

@@ -28,7 +28,7 @@ return <>
     <div className={props.scrolled? styles.pageContainerP : styles.pageContainer}>
  <div id="confettiReward" className={styles.confettiContainer} />
 <div className={styles.title}>מזל טוב! את עומדת להתחתן!</div>
-<div className={styles.description}>היום שכל כך חיכית לו ודמיינת מגיל 3 עומד להגיע בשנה הקרובה ואני מבינה לגמרי את הלחץ שמגיע איתו!</div>
+<div className={styles.description}>היום שכל כך חיכית לו עומד להגיע</div>
 </div>
 </>
 

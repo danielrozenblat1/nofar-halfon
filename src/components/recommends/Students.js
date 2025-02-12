@@ -30,7 +30,7 @@ const Brides = () => {
   return (
     <>
       <div className={styles.title}>אז שנייה לפני שאסביר לך איך הכל עובד..</div>
-      <div className={styles.explain}>הכנתי לך מקבץ קטן של אלה שכבר עברו דרכי</div>
+      <div className={styles.explain}>הכנתי לך מקבץ קטן של הכלות שלי</div>
       <div className={styles.container}>
         <div className={styles.scrollTrack}>
           {/* קבוצה ראשונה של תמונות */}
