@@ -33,7 +33,7 @@ const SecondScreen = () => {
                 />
             </div>
             <div className={styles.description}>ביום המיוחד שלך, כל פרט חשוב. אני יודעת שאת רוצה להיראות במיטבך, להרגיש יפה ובטוחה בעצמך, ולחוות את היום הזה בשמחה ובנעימות. אני כאן כדי להעניק לך את הביטחון שאת זקוקה לו, ולהפוך את חלום האיפור שלך למציאות. </div>
-            <div className={styles.title}>וזה קורה ככה:</div>
+            <div className={styles.title}>וכך עובד התהליך</div>
             <MakeupSteps/>
             <Button text="נופר, בואי נדבר!"/>
             {/* <div className={styles.title}>תשאירי פרטים כאן כדי לשמוע ממני</div>
