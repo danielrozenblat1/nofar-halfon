@@ -513,34 +513,4 @@
       }
 
   }
-  .dateInputWrapper {
-    width: 90%;
-    margin:2% auto;
-    position: relative;
-  }
   
-  .dateInput {
-    width: 90% !important;
-    text-align: right;
-    color: #525252 !important;
-  }
-  
-  /* מסתיר את הטקסט המקורי של הפלייסהולדר */
-  .dateInput[type="date"]::before { 
-    content: attr(data-placeholder);
-    width: 100%;
-    color: #525252;
-  }
-  
-  /* מעלים את הפלייסהולדר כשבוחרים תאריך */
-  .dateInput[type="date"]:focus::before,
-  .dateInput[type="date"]:valid::before { 
-    display: none;
-  }
-  
-  /* מסתיר את האייקון המקורי של הדפדפן */
-  .dateInput[type="date"]::-webkit-calendar-picker-indicator {
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
-  }

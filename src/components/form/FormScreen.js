@@ -3,11 +3,22 @@ import { useState, useRef } from 'react';
 
 const FormScreen = (props) => {
     const [submitted, setSubmitted] = useState(false);
+    const [dateInputType, setDateInputType] = useState('text');
     const nameRef = useRef('');
     const phoneRef = useRef('');
     const emailRef = useRef('');
     const reasonRef = useRef('');
     const reciver = "Nofarhalfonmakeup@gmail.com";
+
+    const handleDateFocus = () => {
+        setDateInputType('date');
+    };
+
+    const handleDateBlur = (e) => {
+        if (!e.target.value) {
+            setDateInputType('text');
+        }
+    };
 
     const submitHandler = async(e) => {
         e.preventDefault();
@@ -79,7 +90,7 @@ const FormScreen = (props) => {
                     <input
                         type="tel"
                         className={styles.input}
-                        placeholder="טלפון"
+                        placeholder="מספר טלפון"
                         ref={phoneRef}
                         aria-label="מספר טלפון"
                     />
@@ -90,15 +101,15 @@ const FormScreen = (props) => {
                         ref={emailRef}
                         aria-label="כתובת מייל"
                     />
-                    <div className={styles.dateInputWrapper}>
-                        <input
-                            type="date"
-                            className={`${styles.input} ${styles.dateInput}`}
-                            ref={reasonRef}
-                            aria-label="תאריך האירוע"
-                            data-placeholder="תאריך האירוע"
-                        />
-                    </div>
+                    <input
+                        type={dateInputType}
+                        className={styles.input}
+                        placeholder="תאריך האירוע - לחצי לבחירת תאריך"
+                        ref={reasonRef}
+                        onFocus={handleDateFocus}
+                        onBlur={handleDateBlur}
+                        aria-label="תאריך האירוע"
+                    />
                     <button 
                         type="submit" 
                         className={styles.button}
