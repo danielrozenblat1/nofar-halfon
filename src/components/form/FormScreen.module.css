@@ -1,0 +1,516 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .title{
+    font-size:3rem;
+    font-family: "Assistant";
+    text-align: center;
+    margin:1% auto;
+    text-shadow: 1px 4px 2px rgba(120, 120, 120, 0.2);
+    direction:rtl
+}
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+   direction: rtl;
+   
+    border-radius: 8px;
+  }
+  
+  .input {
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    direction: rtl;
+    border-radius: 4px;
+  background: linear-gradient(135deg, 
+    #e8dccaae,  /* בז' בהיר */
+    hsla(34, 44%, 69%, 0.46),  /* חום בהיר (tan) */
+    #c19a6b90,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8a99   /* זהב עדין */
+  );
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+    font-size: 1.1rem;
+    color: #333;
+    font-family: "AssistantR";
+    outline: none;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .input::placeholder {
+    color: #525252;
+  }
+  
+  .input:focus {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button {
+    padding: 12px;
+    margin: 20px 0 0;
+    border: none;
+    border-radius: 4px;
+  background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+    font-size: 1.1rem;
+    color: #333;
+    font-family: "Assistant";
+    cursor: pointer;
+ transition: all ease 0.5s;
+  }
+  
+  .button:hover {
+  background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  @media only screen and (max-width: 350px){
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+      }
+    
+      .title{
+        font-size:2rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:1% auto;
+        text-shadow: 1px 4px 2px rgba(120, 120, 120, 0.2);
+        direction:rtl
+    }
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+   
+       direction: rtl;
+       
+        border-radius: 8px;
+      }
+      
+      .input {
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        direction: rtl;
+        border-radius: 4px;
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        color: #333;
+        font-family: "AssistantR";
+        outline: none;
+        transition: box-shadow 0.3s ease;
+      }
+      
+      .input::placeholder {
+        color: #525252;
+      }
+      
+      .input:focus {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+      
+      .button {
+        padding: 12px;
+        margin: 10px 0 0;
+        border: none;
+        border-radius: 4px;
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        color: #333;
+        font-family: "Assistant";
+        cursor: pointer;
+     transition: all ease 0.5s;
+      }
+      
+      .button:hover {
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+  }
+  @media only screen  and (min-width: 350px) and (max-width: 450px){
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+      }
+    
+      .title{
+        font-size:2rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:1% auto;
+        width:90%;
+        text-shadow: 1px 4px 2px rgba(120, 120, 120, 0.2);
+        direction:rtl
+    }
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+       direction: rtl;
+        border-radius: 8px;
+      }
+      
+      .input {
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        direction: rtl;
+        border-radius: 4px;
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        color: #333;
+        font-family: "AssistantR";
+        outline: none;
+        transition: box-shadow 0.3s ease;
+      }
+      
+      .input::placeholder {
+        color: #525252;
+      }
+      
+      .input:focus {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+      
+      .button {
+        padding: 12px;
+        margin: 10px 0 0;
+        border: none;
+        border-radius: 4px;
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        color: #333;
+        font-family: "Assistant";
+        cursor: pointer;
+     transition: all ease 0.5s;
+      }
+      
+      .button:hover {
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+  }
+  @media only screen  and (min-width: 450px) and (max-width: 550px){
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+      }
+    
+      .title{
+        font-size:2.2rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:1% auto;
+        width:90%;
+        text-shadow: 1px 4px 2px rgba(120, 120, 120, 0.2);
+        direction:rtl
+    }
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+       direction: rtl;
+        border-radius: 8px;
+      }
+      
+      .input {
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        direction: rtl;
+        border-radius: 4px;
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        color: #333;
+        font-family: "AssistantR";
+        outline: none;
+        transition: box-shadow 0.3s ease;
+      }
+      
+      .input::placeholder {
+        color: #525252;
+      }
+      
+      .input:focus {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+      
+      .button {
+        padding: 12px;
+        margin: 10px 0 0;
+        border: none;
+        border-radius: 4px;
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        color: #333;
+        font-family: "Assistant";
+        cursor: pointer;
+     transition: all ease 0.5s;
+      }
+      
+      .button:hover {
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+  }
+  @media only screen  and (min-width: 550px) and (max-width: 750px){
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+      }
+    
+      .title{
+        font-size:2.2rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:1% auto;
+        width:70%;
+        text-shadow: 1px 4px 2px rgba(120, 120, 120, 0.2);
+        direction:rtl
+    }
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+       direction: rtl;
+        border-radius: 8px;
+      }
+      
+      .input {
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        direction: rtl;
+        border-radius: 4px;
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        color: #333;
+        font-family: "AssistantR";
+        outline: none;
+        transition: box-shadow 0.3s ease;
+      }
+      
+      .input::placeholder {
+        color: #525252;
+      }
+      
+      .input:focus {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+      
+      .button {
+        padding: 12px;
+        margin: 10px 0 0;
+        border: none;
+        border-radius: 4px;
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        color: #333;
+        font-family: "Assistant";
+        cursor: pointer;
+     transition: all ease 0.5s;
+      }
+      
+      .button:hover {
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+  } @media only screen  and (min-width: 750px) and (max-width: 950px){
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+      }
+    
+      .title{
+        font-size:2.5rem;
+        font-family: "Assistant";
+        text-align: center;
+        margin:1% auto;
+        width:90%;
+        text-shadow: 1px 4px 2px rgba(120, 120, 120, 0.2);
+        direction:rtl
+    }
+      .form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+       direction: rtl;
+        border-radius: 8px;
+      }
+      
+      .input {
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        direction: rtl;
+        border-radius: 4px;
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        color: #333;
+        font-family: "AssistantR";
+        outline: none;
+        transition: box-shadow 0.3s ease;
+      }
+      
+      .input::placeholder {
+        color: #525252;
+      }
+      
+      .input:focus {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+      
+      .button {
+        padding: 12px;
+        margin: 10px 0 0;
+        border: none;
+        border-radius: 4px;
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.2);
+        font-size: 1.1rem;
+        color: #333;
+        font-family: "Assistant";
+        cursor: pointer;
+     transition: all ease 0.5s;
+      }
+      
+      .button:hover {
+   background: linear-gradient(135deg, 
+    #E8DCCA,  /* בז' בהיר */
+    #d2b48c9a,  /* חום בהיר (tan) */
+    #c19a6bb3,  /* חום בינוני */
+    #EADDCA,  /* בז' חם (champagne) */
+    #e6be8ac4   /* זהב עדין */
+  );
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+  }
+  

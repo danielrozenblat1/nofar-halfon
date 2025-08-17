@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 80px 24px 40px;
+    direction: rtl;
+    max-width: 380px;
+    margin: 0 auto;
+    counter-reset: step-counter;
+    position: relative;
+  }
+  
+  .step {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 36px 44px 36px 36px;
+    border-radius: 24px;
+    box-shadow: 
+      0 8px 32px rgba(31, 38, 135, 0.15),
+      0 2px 8px rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 65px;
+    overflow: hidden;
+  }
+  
+  .step::before {
+    content: counter(step-counter, decimal-leading-zero);
+    counter-increment: step-counter;
+    position: absolute;
+    right: -12px;
+    top: -72px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 215, 0, 0.6) 0%,
+      rgba(218, 165, 32, 0.8) 25%,
+      rgba(255, 223, 0, 1) 50%,
+      rgba(218, 165, 32, 0.8) 75%,
+      rgba(255, 215, 0, 0.6) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0.85;
+    z-index: 2;
+    letter-spacing: -2px;
+    text-shadow: 
+      0 2px 4px rgba(218, 165, 32, 0.15),
+      0 4px 8px rgba(218, 165, 32, 0.1);
+  }
+  
+  .step::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .step:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 
+      0 12px 40px rgba(31, 38, 135, 0.2),
+      0 4px 12px rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 215, 0, 0.15);
+  }
+  
+  .step:hover::after {
+    opacity: 1;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .title {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 215, 0, 0.9) 0%,
+      rgba(218, 165, 32, 1) 50%,
+      rgba(255, 223, 0, 0.9) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(218, 165, 32, 0.1);
+  }
+  
+  .text {
+    font-family: 'AssistantR', sans-serif;
+    line-height: 1.7;
+    color: rgba(255, 223, 0, 0.85);
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
